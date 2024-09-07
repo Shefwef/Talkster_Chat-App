@@ -15,7 +15,7 @@ const Login = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
-      <div className="h-full w-full p-6 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-50 border border-gray-300">
+      <div className="h-full w-full p-6 bg-gray-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 border border-gray-300">
         <h1 className="text-3xl font-semibold text-center text-gray-300">
           Login
           <span className="text-red-400"> Talkster</span>
