@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import cookieParser from "cookie-parser";
 
 import authRoutes from "./routes/auth.route.js";
@@ -14,6 +15,7 @@ const PORT = process.env.PORT || 5000;
 dotenv.config();
 
 app.use(express.json()); // to parse the incloming requests with JSON payloads (from req.body)
+app.use(cors({ origin: ["http://localhost:3000"], credentials: true }));
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
